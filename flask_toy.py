@@ -32,7 +32,7 @@ def login():
      username = request.args["username"]
      password = request.args["password"]
 
-     if username != "" && password !="" :
+     if username != "" and password !="" :
          return "<h1>" + str("Logged in successfully!") + "</h1>"
      elif username == "":
          return "<h1>" + str("Please enter valid credentials.") + "</h1>"
